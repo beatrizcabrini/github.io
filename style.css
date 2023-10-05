@@ -1,0 +1,306 @@
+ @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sawarabi Mincho', serif;
+    }
+body {
+    background-color: #393939;
+    }
+
+.navContainer{
+    max-width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+.btn-orange{
+    background-color: #FF5D00;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.logo img{
+    width: 40px;
+    height:40px;
+    margin-top: 5px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+nav ul a::after{
+    content: '';
+    background-color: #FF5D00;
+    height: 3px;
+    display: block;
+    width: 0%;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+
+/*media do nav */
+
+/* fim do media nav*/
+
+/* estilização do main */
+main{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text_box{
+    width: 50%;
+    padding-left: 30px;
+}
+.text_box h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.text_box h1 b{
+    color: #f1676d;
+}
+.text_box p{
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 20px;
+}
+.text_box .input_box{
+    margin: 20px 0;
+    display: flex;
+}
+.text_box .input_box input{
+    width: 60%;
+    display: block;
+    height: 50px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+.text_box .input_box input::placeholder{
+    color: #ffffff;
+}
+.text_box .input_box button{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+/*
+.figure {
+
+}*/
+
+.linguagens {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+.linguagens li img {
+    text-decoration: none;
+    width: 45px;
+}
+
+.medias-socias{
+    margin-top: 30px;
+}
+.medias-socias a{
+    text-decoration: none;
+}
+
+.medias-socias i{
+    font-size: 23px;
+    margin: 0 3px;
+    color: white;
+    background-color: #000000;
+    padding: 7px;
+    border-radius: 5px;
+}
+.img_box{
+    width: 60%;
+}
+.img_box img{
+    display: flex;
+    width: 400px;
+    border-radius: 50%;
+    margin-left: 90px;
+    opacity: 0.9;
+}
+.download{
+    padding: 15px;
+}
+.download img{
+    width: 45px;
+    margin: 20px 0 0 70px;
+    border-radius:50%;
+}
+
+/* main medias */
+@media (max-width:970px) {
+    nav .menu-icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 60%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease-in;
+        background-color: #5654b3;
+    }
+    nav ul.active{
+        transform: translateX(0);
+    }
+    nav ul li{
+        padding: 10px;
+    }
+    nav ul li a{
+        font-size: 18px;
+        color: white;
+    }
+    nav ul button{
+        background-color: #f1676d;
+        font-size: 18px;
+        margin: 10px;
+    }
+    main{
+        flex-direction: column;
+    }
+    .text_box,.img_box{
+        width: 100%;
+        text-align: center;
+    }
+    .text_box{
+        margin-bottom: 40px;
+    }
+    .text_box .input_box{
+        justify-content: center;
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: #393939;
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50px;
+}
+
+.socialIcons a i{
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+/* efeito de transição dos ícones redes sociais*/
+
+.socialIcons a:hover {
+    background-color: black;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+
+/* final do bloco de transição */
+
+.footerNav {
+    margin: 20px 0;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a{
+    list-style: none;
+    color: white;
+    margin: 20px;
+    font-size: 1rem;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+
+.footerBottom {
+    padding: 15px;
+    text-align: center;
+}
+
+.footerBottom p{
+    font-size: 10px;
+    color: white;
+}
+
+/* Footer media */
+@media (max-width: 700px) {
+    .footerNav ul{
+        flex-direction: column;
+    }
+    .footerNav ul li{
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}
+/* Fiinal footer media */
+
+/* estilização html - projetos */

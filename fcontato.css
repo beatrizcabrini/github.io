@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sawarabi Mincho', serif;
+}
+body {
+    background-image: linear-gradient(#00000088,#00000028), 
+    url(./img/fbackground.png);
+    min-height: 100vh;
+    background-size: cover;
+}
+.container{
+    max-width: 1500px;
+    padding: 0 4%;
+    margin: 0 auto;
+}
+
+/* Estilização do  Main */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:80px;
+}
+.text-main{
+    width: 50%;
+    color: white;
+}
+
+.text-main h1{
+    font-size: 110px;
+}
+.text-main h1 span{
+    color: #3d99fc;
+}
+
+/* Estilização Mídias Sociais */
+.text-main .medias-socias{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+.text-main .medias-socias a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    padding-left: 70px;
+    }
+
+/* Estilização Menu dentro da mídeas*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+nav ul a::after{
+    content: '';
+    background-color: black;
+    height: 3px;
+    display: block;
+    width: 0%;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+
+ /* Estilização do  Formulário*/
+.form-main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    }
+.form-main .form{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    }
+.form-main h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    }
+.form-main .form-input{
+    margin: 15px 0;
+    width: 370px;
+    }
+.form-main .form-input input,
+.form-main .form-input textarea{
+    width: 100%;
+    border: 2px solid #ccc;
+    outline: none;
+    padding: 10px;
+    border-radius: 7px;
+    color: #757575;
+    transition: 0.3s;
+    }
+.form-main .form-input textarea{
+    height: 100px;
+    }
+.form-main .form-input input:focus,
+.form-main .form-input textarea:focus{
+    border-color: #FF5D00;
+    }
+ /* Estilização botão */    
+.btn-orange {
+  margin: 10px;
+  padding: 15px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  border: 0px;
+  font-weight: 700;
+  box-shadow: 0px 0px 14px -7px #f09819;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.btn-orange:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.btn-orange:active {
+  transform: scale(0.95);
+}
+/* Fim da estilização do forumário*/
+
+/* Footer não responsivo*/
+
+.footer_copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+.m-b-footer {
+    margin-top: 80px;
+    font-size: 12px;
+    color: white;
+    }
+/* Fim do footer*/
